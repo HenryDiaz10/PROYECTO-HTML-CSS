@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi pagina web</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="estilo2.css" as="style">
+    <link rel="stylesheet" href="estilo2.css">
+
+</head>
+
+<body class="fondo">
+    <header class="header">
+        <h1>
+            Página web
+            <span>
+                Henry Joseph Diaz Tasayco
+            </span>
+            &mdash; HTML / CSS &mdash;
+        </h1>
+    </header>
+    <div class="nav-bg">
+        <nav class="navegacion-principal">
+
+            <div class="hover-container">
+                <a class="explosive-text" href="index.html">Maqueta</a>
+            </div>
+
+            <div class="hover-container">
+                <a class="explosive-text" href="estilo1.html">Estilo 1</a>
+            </div>
+
+            <div class="hover-container">
+                <a class="explosive-text" href="#">Estilo 3</a>
+            </div>
+            
+            <div class="hover-container">
+                <a class="explosive-text" href="#">Estilo 4</a>
+            </div>
+
+            <div class="hover-container">
+                <a class="explosive-text" href="#">Estilo 5</a>
+            </div>
+        </nav>
+    </div>
+
+    <main class="caja-exterior">
+
+        <section class="caja-interior">
+            <h2 class="animate-charcter">Sobre mi</h2>
+                <p class="tracking-in-expand">
+                    <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="125" height="120" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="gradAnim" x1="0%" y1="0%" x2="200%" y2="0%">
+                                <stop offset="0%" stop-color="#231557">
+                                    <animate attributeName="stop-color" values="#231557;#44107a;#ff1361;#fff800;#231557" dur="4s"
+                                        repeatCount="indefinite" />
+                                </stop>
+                                <stop offset="100%" stop-color="#fff800">
+                                    <animate attributeName="stop-color" values="#fff800;#ff1361;#44107a;#231557;#fff800" dur="4s"
+                                        repeatCount="indefinite" />
+                                </stop>
+                            </linearGradient>
+                        </defs>
+                    
+                        <path d="M8 7a4 4 0 1 0 8 0a4 4 0 0 0 -8 0" fill="none" stroke="url(#gradAnim)" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" fill="none" stroke="url(#gradAnim)" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </p>
+                <p class="tracking-in-expand">
+                    Soy estudiante de Ingeniería de Sistemas y actualmente curso el IV ciclo. Me apasiona la tecnología,
+                    el
+                    desarrollo de software y la creación de soluciones innovadoras que faciliten la vida de las
+                    personas.
+                    En este momento estoy enfocándome en aprender desarrollo web full stack, adquiriendo habilidades
+                    tanto
+                    en el front-end como en el back-end para poder diseñar y construir aplicaciones completas y
+                    funcionales.
+                    Mi objetivo es seguir creciendo profesionalmente, desarrollar proyectos reales y contribuir al
+                    avance
+                    tecnológico con soluciones eficientes y creativas.
+                </p>
+        </section>
+
+        <section class="caja-interior">
+            <h2 class="animate-charcter">Proyectos</h2>
+                <p class="tracking-in-expand">
+                    <svg class="icono" xmlns="http://www.w3.org/2000/svg" width="125" height="120" viewBox="0 0 24 24">
+                        <defs>
+                            <linearGradient id="gradFillAnim" x1="0%" y1="0%" x2="200%" y2="0%">
+                                <stop offset="0%" stop-color="#231557">
+                                    <animate attributeName="stop-color" values="#231557;#44107a;#ff1361;#fff800;#231557" dur="4s"
+                                        repeatCount="indefinite" />
+                                </stop>
+                                <stop offset="100%" stop-color="#fff800">
+                                    <animate attributeName="stop-color" values="#fff800;#ff1361;#44107a;#231557;#fff800" dur="4s"
+                                        repeatCount="indefinite" />
+                                </stop>
+                            </linearGradient>
+                        </defs>
+                        <path d="M9 4h3l2 2h5a2 2 0 0 1 2 2v7a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2"
+                            fill="url(#gradFillAnim)" stroke="none" />
+                        <path d="M17 17v2a2 2 0 0 1 -2 2h-10a2 2 0 0 1 -2 -2v-9a2 2 0 0 1 2 -2h2" fill="url(#gradFillAnim)" stroke="none" />
+                    </svg>
+
+                </p>
+                <p class="tracking-in-expand">
+                    Esta es mi primera página web desarrollada como parte del curso de Desarrollo Web Full Stack. Es un
+                    proyecto inicial que he creado aplicando los conocimientos básicos adquiridos hasta el momento,
+                    utilizando HTML para la estructura del contenido y CSS para el diseño y la presentación visual. Con
+                    esta
+                    práctica estoy dando mis primeros pasos en la construcción de sitios web, aprendiendo a organizar la
+                    información, crear interfaces atractivas y mejorar mis habilidades técnicas para futuros proyectos
+                    más
+                    avanzados en el ámbito del desarrollo web.
+                </p>
+        </section>
+
+        <section class="caja-interior">
+            <p class="tracking-in-expand">
+                Este primer sitio web es solo el comienzo. Mi objetivo es realizar proyectos cada vez más completos e
+                innovadores, incorporando tecnologías modernas y buenas prácticas del sector. Quiero desarrollar mejores
+                diseños, crear páginas más interactivas utilizando JavaScript, integrar bases de datos para manejar
+                información de manera dinámica y profundizar tanto en el desarrollo frontend como en el backend. Me
+                entusiasma seguir aprendiendo más allá de lo básico, explorar nuevas herramientas y lenguajes de
+                programación y aplicar ese conocimiento para desarrollar soluciones creativas y funcionales que aporten
+                valor real a los usuarios.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <h2>
+            CONTACTO
+            <span>contacto</span>
+            <span>contacto</span>
+            <span>+51 954 932 421</span>
+        </h2>
+    </footer>
+</body>
+
+</html>

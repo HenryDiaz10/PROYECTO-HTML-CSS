@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Docentes</title>
+    <script src="https://cdnjsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preload" href="tailwind.css">
+    <link rel="stylesheet" href="tailwind.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+</head>
+<body class="fondo__gradient pt-40 pb-20">
+        <header class="fixed inset-x-0 top-0 z-50 fondo__gradient">
+            <!--NAV-->
+            <nav aria-label="Global" class="flex items-center justify-between p-4 lg:px-8">
+                <div class="flex lg:flex-1">
+                    <!--PARTE IZQUIERDA DEL NAV-->
+                    <a href="#" class="-m-1.5 p-1.5 text-white">
+                        <span class="sr-only">Henry Diaz</span>
+                        <img src="./img/html-css.png" alt="" class="h-20 w-auto" /> Henry Diaz T.
+                    </a>
+                </div>
+        
+                <!--BOTON MENU-->
+                <div class="flex lg:hidden">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                
+                
+                <!--ENLACES DEL NAV-->
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="tailwind.html" class="nav__fuente hover-underline font-semibold text-white">Inicio</a>
+                    <a href="sobreMi.html" class="nav__fuente hover-underline font-semibold text-white">Sobre mi</a>
+                    <a href="miUniversidad.html" class="nav__fuente hover-underline font-semibold text-white">Mi Universidad</a>
+                    <a href="misDocentes.html" class="nav__fuente hover-underline font-semibold text-white active">Mis Docentes</a>
+                    <a href="misCursos.html" class="nav__fuente hover-underline font-semibold text-white">Mis cursos</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#" class="nav__fuente hover-underline font-semibold text-white">Maqueta<span
+                            aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+        
+            <!--CONTENIDO BOTON MENU-->
+            <el-dialog>
+                <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                    <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                        <el-dialog-panel
+                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="-m-1.5 p-1.5">
+                                    <span class="sr-only">Henry Diaz T.</span>
+                                    <img src="./img/html-css.png" alt="" class="h-8 w-auto" />
+                                </a>
+                                <button type="button" command="close" commandfor="mobile-menu"
+                                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                    <span class="sr-only">Cerrar menu</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6">
+                                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-white/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="tailwind.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5  ">Inicio</a>
+                                        <a href="sobreMi.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5  ">Sobre Mi</a>
+                                        <a href="miUniversidad.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mi Universidad</a>
+                                        <a href="misDocentes.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold color__azul borde__menu-gradiente hover:bg-white/5">Mis docentes</a>
+                                        <a href="misCursos.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mis
+                                            cursos</a>
+                                    </div>
+                                    <div class="py-6">
+                                        <a href="#"
+                                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Regresar
+                                            a la maqueta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-dialog-panel>
+                    </div>
+                </dialog>
+            </el-dialog>
+    </header>
+    <div>
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <!--TITULO-->
+            <div class="mx-auto max-w-2xl text-center">
+                <h2 class="titulo__efecto titulo__efecto borde-gradiente text-3xl font-bold tracking-tight text-white sm:text-4xl">Mis Docentes</h2>
+                <p class="mt-4 text-lg leading-8 text-gray-400">
+                    <br>
+                    En esta sección encontrarás a los profesionales que guían mi formación académica en la carrera de Ingeniería de
+                    Sistemas. Cada docente aporta su experiencia, conocimiento y vocación de enseñanza para fortalecer mis competencias
+                    técnicas y humanas.
+                    <br><br>
+                    A través de sus clases, proyectos y asesorías he aprendido a integrar la teoría con la práctica, a trabajar en equipo y
+                    a desarrollar soluciones innovadoras. Gracias a su dedicación, compromiso y trayectoria, mi proceso de aprendizaje se
+                    enriquece constantemente y me inspira a superarme día a día.
+                </p>
+            </div>
+    
+            <!--GRID-->
+            <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 
+                            sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    
+                <!--DOCENTE 1-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/yangali.jpg" alt="No">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">YANGALI QUISPE <br> KLAUS BORMANN</h3>
+                    <p class="text-sm leading-6 text-gray-400">Cultura Ambiental y Responsabilidad Social</p>
+                </div>
+    
+                <!--DOCENTE 2-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/claudio.jpg" alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">HUANCAHUIRE BRAVO <br> CLAUDIO ISAIAS</h3>
+                    <p class="text-sm leading-6 text-gray-400">Desarrollo Web Full Stack</p>
+                </div>
+    
+                <!--DOCENTE 3-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/nilo.jpg" alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">COLQUEPISCO PAUCAR <br> NILO TEODORICO</h3>
+                    <p class="text-sm leading-6 text-gray-400">Estadística y Probabilidades</p>
+                </div>
+    
+                <!--DOCENTE 4-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/marisol.png" alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">DAGA CHACA <br> MARISOL</h3>
+                    <p class="text-sm leading-6 text-gray-400">Investigación Operativa II</p>
+                </div>
+    
+                <!--DOCENTE 5-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/maria.png" alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">CHOQUEVILCA CUNO <br> MARIA SOLEDAD</h3>
+                    <p class="text-sm leading-6 text-gray-400">Derecho Empresarial</p>
+                </div>
+    
+                <!--DOCENTE 6-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/marisol.png" alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">DAGA CHACA <br> MARISOL</h3>
+                    <p class="text-sm leading-6 text-gray-400">Sistemas Digitales</p>
+                </div>
+    
+                <!--DOCENTE 7-->
+                <div class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center sm:col-span-2 sm:justify-self-center lg:col-span-1 lg:col-start-2">
+                    <img class="h-40 w-40 rounded-full object-cover" src="./img/misDocentes/percy.png" alt="">
+                    <h3 class="mt-6 text-lg font-semibold leading-7 tracking-tight text-white">SALCEDO RODAS <br> PERCY ISMAEL</h3>
+                    <p class="text-sm leading-6 text-gray-400">Fundamentos de Base de Datos</p>
+                </div>
+    
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

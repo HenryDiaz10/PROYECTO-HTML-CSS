@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport">
+
+    <title>Inicio</title>
+    <script src="https://cdnjsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="preload" href="tailwind.css">
+    <link rel="stylesheet" href="tailwind.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
+</head>
+
+<body class="fondo__img">
+
+    <div class="relative isolate px-6 pt-14 lg:px-8 overflow-hidden">
+        <header class="fixed inset-x-0 top-0 z-50 fondo__gradient">
+            <!--NAV-->
+            <nav aria-label="Global" class="flex items-center justify-between p-4 lg:px-8">
+                <div class="flex lg:flex-1">
+                    <!--PARTE IZQUIERDA DEL NAV-->
+                    <a href="#" class="-m-1.5 p-1.5 text-white">
+                        <span class="sr-only">Henry Diaz</span>
+                        <img  src="./img/html-css.png" alt="" class="h-20 w-auto" /> Henry Diaz T.
+                    </a>
+                </div>
+
+                <!--BOTON MENU-->
+                <div class="flex lg:hidden">
+                    <button type="button" command="show-modal" commandfor="mobile-menu"
+                        class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                        <span class="sr-only">Abrir menu</span>
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                            aria-hidden="true" class="size-6">
+                            <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+
+                <!--ENLACES DEL NAV-->
+                <div class="hidden lg:flex lg:gap-x-12">
+                    <a href="../tailwind/tailwind.html" class="nav__fuente hover-underline font-semibold text-white active">Inicio</a>
+                    <a href="../tailwind/sobreMi.html" class="nav__fuente hover-underline font-semibold text-white">Sobre mi</a>
+                    <a href="../tailwind/miUniversidad.html" class="nav__fuente hover-underline font-semibold text-white">Mi Universidad</a>
+                    <a href="../tailwind/miUniversidad.html" class="nav__fuente hover-underline font-semibold text-white">Mis Docentes</a>
+                    <a href="../tailwind/misCursos.html" class="nav__fuente hover-underline font-semibold text-white">Mis cursos</a>
+                </div>
+                <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                    <a href="#" class="nav__fuente hover-underline font-semibold text-white">Maqueta<span
+                            aria-hidden="true">&rarr;</span></a>
+                </div>
+            </nav>
+
+            <!--CONTENIDO BOTON MENU-->
+            <el-dialog>
+                <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                    <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                        <el-dialog-panel
+                            class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                            <div class="flex items-center justify-between">
+                                <a href="#" class="-m-1.5 p-1.5">
+                                    <span class="sr-only">Henry Diaz T.</span>
+                                    <img src="./img/html-css.png" alt="" class="h-8 w-auto" />
+                                </a>
+                                <button type="button" command="close" commandfor="mobile-menu"
+                                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                    <span class="sr-only">Cerrar menu</span>
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                        data-slot="icon" aria-hidden="true" class="size-6">
+                                        <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="mt-6 flow-root">
+                                <div class="-my-6 divide-y divide-white/10">
+                                    <div class="space-y-2 py-6">
+                                        <a href="../tailwind/tailwind.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold color__azul borde__menu-gradiente hover:bg-white/5  ">Inicio</a>
+                                        <a href="../tailwind/sobreMi.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white  hover:bg-white/5  ">Sobre Mi</a>
+                                        <a href="../tailwind/miUniversidad.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mi Universidad</a>
+                                        <a href="../tailwind/misDocentes.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mis docentes</a>
+                                        <a href="../tailwind/misCursos.html"
+                                            class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mis cursos</a>
+                                    </div>
+                                    <div class="py-6">
+                                        <a href="index"
+                                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Regresar a la maqueta</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </el-dialog-panel>
+                    </div>
+                </dialog>
+            </el-dialog>
+
+        </header>
+
+        <div class="relative isolate px-6 pt-14 lg:px-8">
+            <div aria-hidden="true"
+                class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80">
+                <div style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+                    class="relative left-[calc(50%-11rem)] aspect-1155/678 w-144.5 -translate-x-1/2 rotate-30 bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-288.75">
+                </div>
+            </div>
+            <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
+                <div class="text-center">
+                    <h1 class="titulo__efecto text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Página de Henry Diaz Tasayco</h1>
+                    <p class="mt-8 text-lg font-medium text-pretty text-gray-400 sm:text-xl/8">Estudiante de Ingeniería de Sistemas en la Universidad Nacional de Cañete
+                        <br><br>
+                        Esta página web fue creada como parte de mi proceso de aprendizaje en el desarrollo front-end, aplicando de manera
+                        práctica los conocimientos adquiridos en HTML y CSS. Además, utilicé Tailwind CSS para mejorar el diseño,
+                        la estructura visual y la adaptación a diferentes dispositivos. El objetivo principal de este proyecto es reforzar mis
+                        habilidades, experimentar con nuevas herramientas y demostrar cómo la combinación de teoría y práctica permite crear
+                        interfaces web funcionales y atractivas.
+                    </p>
+                    <div class="flex flex-col items-center space-y-4 mt-6">
+                        <!-- Botones sociales -->
+                        <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                            <!-- WhatsApp -->
+                            <a href="https://wa.me/51954932421?text=Hola%20quiero%20contactarme%20contigo" target="_blank"
+                                class="flex items-center justify-center space-x-2 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg transition w-full sm:w-auto caja-efecto">
+                                <!-- icono -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.482 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.668.149-.198.297-.767.966-.94 1.164-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.149-.174.198-.298.297-.497.099-.198.05-.372-.025-.521-.075-.149-.668-1.611-.916-2.207-.242-.579-.487-.5-.668-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.077 4.487.709.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413z" />
+                                </svg>
+                                <span>WhatsApp</span>
+                            </a>
+                    
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/in/henry-diaz-tasayco-658913332/" target="_blank"
+                                class="flex items-center justify-center space-x-2 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-lg transition w-full sm:w-auto caja-efecto">
+                                <!-- icono -->
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 fill-current" viewBox="0 0 24 24">
+                                    <path
+                                        d="M20.447 20.452h-3.554v-5.569c0-1.327-.025-3.037-1.85-3.037-1.851 0-2.135 1.445-2.135 2.939v5.667H9.354V9h3.414v1.561h.049c.476-.9 1.637-1.849 3.37-1.849 3.601 0 4.267 2.368 4.267 5.455v6.285zM5.337 7.433c-1.144 0-2.069-.926-2.069-2.069 0-1.144.925-2.069 2.069-2.069s2.068.925 2.068 2.069c0 1.143-.924 2.069-2.068 2.069zM6.814 20.452H3.861V9h2.953v11.452zM22.225 0H1.771C.792 0 0 .771 0 1.723v20.555C0 23.229.792 24 1.771 24h20.451C23.2 24 24 23.229 24 22.278V1.723C24 .771 23.2 0 22.225 0z" />
+                                </svg>
+                                <span>LinkedIn</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

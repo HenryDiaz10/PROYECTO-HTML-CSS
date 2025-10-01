@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Universidad</title>
+    <script src="https://cdnjsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+        rel="stylesheet">
+
+        <link rel="preload" href="tailwind.css">
+    <link rel="stylesheet" href="tailwind.css">
+</head>
+
+<body class="fondo__gradient pt-40 pb-20">
+    <header class="fixed inset-x-0 top-0 z-50 fondo__gradient">
+        <!--NAV-->
+        <nav aria-label="Global" class="flex items-center justify-between p-4 lg:px-8">
+            <div class="flex lg:flex-1">
+                <!--PARTE IZQUIERDA DEL NAV-->
+                <a href="#" class="-m-1.5 p-1.5 text-white">
+                    <span class="sr-only">Henry Diaz</span>
+                    <img src="./img/html-css.png" alt="" class="h-20 w-auto" /> Henry Diaz T.
+                </a>
+            </div>
+    
+            <!--BOTON MENU-->
+            <div class="flex lg:hidden">
+                <button type="button" command="show-modal" commandfor="mobile-menu"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200">
+                    <span class="sr-only">Abrir menu</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                        aria-hidden="true" class="size-6">
+                        <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </button>
+            </div>
+    
+    
+            <!--ENLACES DEL NAV-->
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="tailwind.html" class="nav__fuente hover-underline font-semibold text-white">Inicio</a>
+                <a href="sobreMi.html" class="nav__fuente hover-underline font-semibold text-white">Sobre mi</a>
+                <a href="miUniversidad.html" class="nav__fuente hover-underline font-semibold text-white active">Mi Universidad</a>
+                <a href="misDocentes.html" class="nav__fuente hover-underline font-semibold text-white">Mis
+                    Docentes</a>
+                <a href="misCursos.html" class="nav__fuente hover-underline font-semibold text-white">Mis cursos</a>
+            </div>
+            <div class="hidden lg:flex lg:flex-1 lg:justify-end">
+                <a href="#" class="nav__fuente hover-underline font-semibold text-white">Maqueta<span
+                        aria-hidden="true">&rarr;</span></a>
+            </div>
+        </nav>
+    
+        <!--CONTENIDO BOTON MENU-->
+        <el-dialog>
+            <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+                <div tabindex="0" class="fixed inset-0 focus:outline-none">
+                    <el-dialog-panel
+                        class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+                        <div class="flex items-center justify-between">
+                            <a href="#" class="-m-1.5 p-1.5">
+                                <span class="sr-only">Henry Diaz T.</span>
+                                <img src="./img/html-css.png" alt="" class="h-8 w-auto" />
+                            </a>
+                            <button type="button" command="close" commandfor="mobile-menu"
+                                class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                                <span class="sr-only">Cerrar menu</span>
+                                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    data-slot="icon" aria-hidden="true" class="size-6">
+                                    <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-6 flow-root">
+                            <div class="-my-6 divide-y divide-white/10">
+                                <div class="space-y-2 py-6">
+                                    <a href="tailwind.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5  ">Inicio</a>
+                                    <a href="sobreMi.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold  text-white hover:bg-white/5  ">Sobre Mi</a>
+                                    <a href="miUniversidad.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold color__azul borde__menu-gradiente hover:bg-white/5">Mi Universidad</a>
+                                    <a href="misDocentes.html"
+                                        class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mis docentes</a>
+                                    <a href="misCursos.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-bold text-white hover:bg-white/5">Mis
+                                        cursos</a>
+                                </div>
+                                <div class="py-6">
+                                    <a href="#"
+                                        class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Regresar
+                                        a la maqueta</a>
+                                </div>
+                            </div>
+                        </div>
+                    </el-dialog-panel>
+                </div>
+            </dialog>
+        </el-dialog>
+    </header>
+    <!-- Presentación Universidad -->
+    <section class="pt-6 pb-10">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <img src="./img/miUniversidad/logoUniversidad.png" alt="Universidad" class="w-full rounded-2xl shadow-2xl object-cover">
+            <div>
+                <h2 class="titulo__efecto borde-gradiente text-3xl font-bold text-white sm:text-4xl">Mi universidad</h2>
+                <p class="mt-4 text-lg leading-8 text-gray-400">
+                    Estudio en la Universidad Nacional de Cañete, una institución pública que es un pilar de la educación superior en la
+                    región sur de Lima y se distingue por ofrecer programas académicos de calidad orientados a la formación integral de los
+                    estudiantes. En ella he encontrado un ambiente dinámico y enriquecedor, con docentes capacitados y oportunidades para
+                    fortalecer mis habilidades, ampliar mis perspectivas y prepararme para los retos del mundo laboral, al mismo tiempo que
+                    crezco como persona y contribuyo al progreso de mi comunidad y al desarrollo del país mediante el conocimiento y la
+                    innovación.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Campus -->
+    <section class="py-16 bg-slate-800/50">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 class="titulo__efecto borde-gradiente text-3xl font-bold text-white text-center ">Sus Campus</h2>
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Campus 1 -->
+                <div class="caja-efecto bg-slate-800/60 p-8 shadow-2xl ring-1 ring-white/5">
+                    <h3 class="text-xl font-semibold text-white text-center">Casa de la Cultura – San Vicente</h3>
+                    <!-- Imagen del campus -->
+                    <img src="./img/miUniversidad/casaDeLaCultura.jpg" alt="Casa de la Cultura Cañete"
+                        class="mt-4 w-full h-56 object-cover rounded-xl shadow-md">
+                    <p class="mt-4 text-sm leading-6 text-gray-300">
+                        Ubicado en el corazón de Cañete, este campus ofrece modernas instalaciones y espacios diseñados
+                        para potenciar el aprendizaje.
+                    </p>
+                </div>
+    
+                <!-- Campus 2 -->
+                <div class=" caja-efecto bg-slate-800/60 p-8 shadow-2xl ring-1 ring-white/5">
+                    <h3 class="text-xl font-semibold text-white text-center">San Luis</h3>
+                    <!-- Imagen del campus -->
+                    <img src="./img/miUniversidad/sanLuis.jpg" alt="Campus San Luis"
+                        class="mt-4 w-full h-56 object-cover rounded-xl shadow-md">
+                    <p class="mt-4 text-sm leading-6 text-gray-300">
+                        Nuestro campus en San Luis brinda un entorno dinámico y accesible, con laboratorios, bibliotecas
+                        y áreas de integración estudiantil.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Carreras -->
+    <section class="py-16">
+        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+            <h2 class="titulo__efecto borde-gradiente text-3xl font-bold text-white text-center">Sus Carreras</h2>
+            <p class="mt-4 text-center text-lg text-gray-400">La Universidad Nacional de Cañete ofrece las siguientes carreras</p>
+
+            <!-- Grid de carreras -->
+            <div class="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8">
+                <!-- Carrera 1 -->
+                <div
+                    class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img src="./img/miUniversidad/administracion.jpg" alt="Carrera 1"
+                        class="h-28 w-28 rounded-full object-cover shadow-md">
+                    <h3 class="mt-4 text-lg font-semibold text-white">Administración</h3>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Forma profesionales en la gestión y dirección de organizaciones, optimiza recursos y fomenta el logro de
+                        objetivos.
+                    </p>
+                </div>
+
+                <!-- Carrera 2 -->
+                <div
+                    class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img src="./img/miUniversidad/contabilidad.png" alt="Carrera 2"
+                        class="h-28 w-28 rounded-full object-cover shadow-md">
+                    <h3 class="mt-4 text-lg font-semibold text-white">Contabilidad</h3>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Forma profesionales en la gestión financiera y el control de recursos económicos de las organizaciones.
+                    </p>
+                </div>
+
+                <!-- Carrera 3 -->
+                <div
+                    class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img src="./img/miUniversidad/ingenieriaDeSistemas.png" alt="Carrera 3"
+                        class="h-28 w-28 rounded-full object-cover shadow-md">
+                    <h3 class="mt-4 text-lg font-semibold text-white">Ing. de Sistemas</h3>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Forma profesionales con sólidos conocimientos en tecnología y gestión para desarrollar soluciones innovadoras.
+                    </p>
+                </div>
+
+                <!-- Carrera 4 -->
+                <div
+                    class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img src="./img/miUniversidad/agronomia.png" alt="Carrera 4"
+                        class="h-28 w-28 rounded-full object-cover shadow-md">
+                    <h3 class="mt-4 text-lg font-semibold text-white">Agronomía</h3>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Forma profesionales en el manejo sostenible de cultivos y recursos naturales para mejorar la producción agrícola.
+                    </p>
+                </div>
+
+                <!-- Carrera 5 -->
+                <div
+                    class="caja-efecto bg-slate-800/60 flex flex-col items-center text-center">
+                    <img src="./img/miUniversidad/hoteleriaYTurismo.jpg" alt="Carrera 5"
+                        class="h-28 w-28 rounded-full object-cover shadow-md">
+                    <h3 class="mt-4 text-lg font-semibold text-white">Hotel. y Turismo</h3>
+                    <p class="mt-2 text-sm text-gray-300">
+                        Forma profesionales en gestión turística y hotelera, enfocados en atención al cliente y desarrollo sostenible.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

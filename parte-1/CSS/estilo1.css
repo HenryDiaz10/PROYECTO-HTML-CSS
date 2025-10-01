@@ -99,7 +99,7 @@ a:hover{
     flex-direction: column;
     text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1080px) {
     .caja-exterior{
         width: 60%;
     }

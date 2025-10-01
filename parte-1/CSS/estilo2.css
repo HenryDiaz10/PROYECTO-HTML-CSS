@@ -547,6 +547,10 @@ h2 {
     padding: 2rem 0;
     text-align: center;
 }
+
+@media (min-width:768px) {
+    
+}
 h1 {
     margin: 0;
     text-align: center;
@@ -564,9 +568,10 @@ h1 {
         font: 700 6.4rem/1 "Oswald", sans-serif;
         letter-spacing: 0;
         padding: .4rem 0 .52rem;
-        display: block;
+        display: block; 
         margin: 0 auto;
         text-shadow: 0 0 8rem rgba(255, 255, 255, .5);
+
 
         background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
         -webkit-background-clip: text;
@@ -580,6 +585,7 @@ h1 {
 
     }
 }
+
 
 @media (min-width: 768px) {
     h1{

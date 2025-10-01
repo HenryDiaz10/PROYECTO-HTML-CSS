@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="js.css">
+</head>
+
+<body class="light">
+    <!-- Barra superior -->
+    <div class="topbar fondo__gradient">
+        <h1>Mi Página: Henry Diaz Tasayco</h1>
+        <nav class="topnav">
+            <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+            <a href="#" onclick="mostrarSeccion('quienSoy')">Quién soy</a>
+            <a href="#" onclick="mostrarSeccion('proyectos')">Proyectos</a>
+            <a href="#" onclick="mostrarSeccion('javascript')">JavaScript</a>
+        </nav>
+    </div>
+
+    <!-- Menú lateral -->
+    <div class="sidebar fondo__gradient">
+        <h2>Menú</h2>
+        <a href="#" onclick="mostrarSeccion('inicio')">Inicio</a>
+        <a href="#" onclick="mostrarSeccion('quienSoy')">Quién soy</a>
+        <a href="#" onclick="mostrarSeccion('proyectos')">Proyectos</a>
+        <a href="#" onclick="mostrarSeccion('javascript')">JavaScript</a>
+    </div>
+
+    <!-- Contenido principal -->
+    <div class="content">   
+        <div id="contenido">
+            <h1>Bienvenido</h1>
+            <p>Seleccione una opcion</p>
+        </div>
+
+        <button class="btn" id="btnAlerta">Alerta JS</button>
+        <button class="btn" id="btnModo">Cambiar a modo oscuro/claro</button>
+        <a href="../../PROYECTO-HTML-CSS/index.html" class="btn" id="btnModo">Regresar a la maqueta</a>
+    </div>
+
+    <script src="js.js"></script>
+</body>
+
+</html>

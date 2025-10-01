@@ -6,11 +6,12 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Delius", cursive;
     display: flex;
     min-height: 100vh;
     transition: background 0.3s, color 0.3s;
 }
+
 
 /* ===== Barra superior ===== */
 .topbar {

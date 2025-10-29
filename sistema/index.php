@@ -2,7 +2,7 @@
 require "conexion.php";
 session_start();
 $error = "";
-
+//COMENTARIO
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $usuario = $_POST['usuario'];
     $password = $_POST['password'];
